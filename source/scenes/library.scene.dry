@@ -206,32 +206,34 @@ go-to: menu
 
 **SPD** - *Sozialdemokratische Partei Deutschlands* (Social Democratic Party of Germany) - this is us. We are a socialist and democratic party of the working class. We are the heirs of the legacy of Marx and Engels, Lassalle and Bebel. We are the foremost defenders of the Republic. The modern SPD was formed from a merger of the "Majority" SPD, which supported the Great War, and the "Independent" SPD or USPD, which opposed the war.
 
+Current internal dissent: [+ dissent_percent : dissent +] ([+ dissent_percent +]%)
+
 **Z** - *Zentrumspartei* (Center Party) - a centrist to center-right Catholic party that supports the Republic, and has historically supported many of our labor, welfare, and anti-militarist priorities. They have often been in coalitions with us. They are often associated with the **BVP** (Bavarian People's Party), which represents Catholics in Bavaria. [? if year >= 1930 or chancellor = "Brüning" : They have appeared to take a more conservative turn recently, with the rise of Brüning and the party leader, Ludwig Kaas. ?]
 
-Current relations: [+ z_relation : relationships +]
+Current relations: [+ z_relation : relationships +] ([+ z_relation +]%)
 
 # TODO: replace this with the german state party after 1930
 **DDP** - *Deutsche Demokratische Partei* (German Democratic Party) - a center-left liberal party, popular among the intelligensia and educated middle class. They have often been in coalitions with us. [? if year >= 1930 : They have recently reformed themselves as the German State Party (DStP). ?]
 
-Current relations: [+ ddp_relation : relationships +]
+Current relations: [+ ddp_relation : relationships +] ([+ ddp_relation +]%)
 
 **DVP** - *Deutsche Volkspartei* (German People's Party) - a conservative-liberal party, supported by the middle classes and bourgeoisie. We have occasionally been in coalitions.
 
-Current relations: [+ dvp_relation : relationships +]
+Current relations: [+ dvp_relation : relationships +] ([+ dvp_relation +]%)
 
 **DNVP** - *Deutschnationale Volkspartei* (German National People's Party) - a right-wing nationalist-conservative party, with authoritarian, monarchist, and racist elements. It is supported by the former aristocracy, rural landowners, and conservative Lutherans.
 
-Current relations: [+ dnvp_relation : relationships +]
+Current relations: [+ dnvp_relation : relationships +] ([+ dnvp_relation +]%)
 
 **KPD** - *Kommunistische Partei Deutschlands* (German Communist Party) - a radical left-wing offshoot of the SPD that emerged in the aftermath of the German Revolution of 1918, they follow the path of Moscow, opposing parliamentary democracy in favor of a Soviet-style revolution.
 
-Current relations: [+ kpd_relation : relationships +]
+Current relations: [+ kpd_relation : relationships +] ([+ kpd_relation +]%)
 
 [? if sapd_formed: SAPD - Sozialistische Arbeiterpartei Deutschlands (Socialist Worker's Party of Germany) - a party recently formed in a split from the SPD, the SAPD is essentially an agglomeration of various left-wing splinter groups between the SPD and KPD. ?]
 
 **NSDAP** - *Nationalsozialistische Deutsche Arbeiterpartei* - (National Socialist German Worker's Party, or Nazis) - a far-right nationalist and antisemitic party. Led by Adolf Hitler, they attempted a coup in 1923, and were banned for it, but have since been legalized.
 
-Current relations: [+ nsdap_relation : relationships +]
+Current relations: [+ nsdap_relation : relationships +] ([+ nsdap_relation +]%)
 
 **Other parties** - there is a multitude of small, mostly conservative parties, such as the Economic Party of the German Middle Class, the Farmer's Party, the Agricultural League, and others. Their political position usually lies between the DVP and DNVP. 
 
@@ -249,35 +251,35 @@ go-to: menu
 
 Strength: [+ rb_strength +] thousand
 
-Militarization: [+ rb_militancy : militancy +]
+Militarization: [+ rb_militancy : militancy +] ([+ rb_militancy +]%)
 
 **Rotfrontkämpferbund (RFB)**: The "Red Front Fighter's League" is associated with the KPD.
 
 Strength: [+ rfb_strength +] thousand
 
-Militarization: [+ rfb_militancy : militancy +]
+Militarization: [+ rfb_militancy : militancy +] ([+ rfb_militancy +]%)
 
 **Der Stahlhelm**: A right-wing nationalist organization of primarily Great War veterans, descended from the *Freikorps* that emerged after the war. Associated with the DNVP.
 
 Strength: [+ sh_strength +] thousand
 
-Militarization: [+ sh_militancy : militancy +]
+Militarization: [+ sh_militancy : militancy +] ([+ sh_militancy +]%)
 
 **Sturmabteilung (SA)**: This is the nazi paramilitary group.
 
 Strength: [+ sa_strength +] thousand
 
-Militarization: [+ sa_militancy : militancy +]
+Militarization: [+ sa_militancy : militancy +] ([+ sa_militancy +]%)
 
 **Official military/paramilitary groups:**
 
 **Reichswehr**: [+ reichswehr_strength +] thousand troops. This is Germany's military.
 
-Loyalty: [+ reichswehr_loyalty : loyalty +]
+Loyalty: [+ reichswehr_loyalty : loyalty +] ([+ reichswehr_loyalty +]%)
 
 **Prussian police**: [+ prussian_police_strength +] thousand members.
 
-Loyalty: [+ prussian_police_loyalty : loyalty +]
+Loyalty: [+ prussian_police_loyalty : loyalty +] ([+ prussian_police_loyalty +]%)
 
 
 
@@ -286,39 +288,39 @@ go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
 
 **Internal factions of the SPD**
 
-Overall dissent: [+ dissent_percent : dissent +]
+Overall dissent: [+ dissent_percent : dissent +] ([+ dissent_percent +]%)
 
 **Left**
 
 Many leftists are former members of the USPD (the left-wing, anti-war Independent Social Democratic Party), or are young radicals. Many are interested in closer cooperation with the KPD, and some support extraparliamentary action.
 
-Strength: [+ left_strength : strength +]
+Strength: [+ left_strength : strength +] ([+ left_strength +]%)
 
-Dissent: [+ left_dissent : dissent +]
+Dissent: [+ left_dissent : dissent +] ([+ left_dissent +]%)
 
 **Centrists**
 
 Centrists in the SPD are followers of the doctrine of orthodox Marxism as expounded by Karl Kautsky and later Rudolf Hilferding. They seek a middle course between reform and revolution, while defending the democratic state.
 
-Strength: [+ center_strength : strength +]
+Strength: [+ center_strength : strength +] ([+ center_strength +]%)
 
-Dissent: [+ center_dissent : dissent +]
+Dissent: [+ center_dissent : dissent +] ([+ center_dissent +]%)
 
 **Labor**
 
 Many SPD members are also part of the ADGB, the federation of free trade unions. Their goal is economic reform and benefits for organized workers.
 
-Strength: [+ labor_strength : strength +]
+Strength: [+ labor_strength : strength +] ([+ labor_strength +]%)
 
-Dissent: [+ labor_dissent : dissent +]
+Dissent: [+ labor_dissent : dissent +] ([+ labor_dissent +]%)
 
 **Reformists**
 
 Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy against the far right and left. [? if spd_prussia : They are dominant in the state government of Prussia. ?]
 
-Strength: [+ reformist_strength : strength +]
+Strength: [+ reformist_strength : strength +] ([+ reformist_strength +]%)
 
-Dissent: [+ reformist_dissent : dissent +]
+Dissent: [+ reformist_dissent : dissent +] ([+ reformist_dissent +]%)
 
 @neorevisionists
 go-to: menu
@@ -327,9 +329,9 @@ go-to: menu
 
 Neorevisionists focus on defending the republic and expanding democracy, while also expanding the party's base beyond the working class to create a people's party. They support new propaganda methods and extraparliamentary action in defense of the republic.
 
-Strength: [+ neorevisionist_strength : strength +]
+Strength: [+ neorevisionist_strength : strength +] ([+ neorevisionist_strength +]%)
 
-Dissent: [+ neorevisionist_dissent : dissent +]
+Dissent: [+ neorevisionist_dissent : dissent +] ([+ reformist_dissent +]%)
 
 
 @figures
