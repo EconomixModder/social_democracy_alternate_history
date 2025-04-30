@@ -23,11 +23,11 @@ Resources available: [+ resources +]
 SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
 [? if in_weimar_coalition and spd_in_government: Weimar Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
 
-[? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
+[? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ([+ coalition_dissent +]%) ?]
 
-[? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
+[? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ([+ kpd_coalition_dissent +]%) ?]
 
-Internal dissent: [+ dissent_percent : dissent +]
+Internal dissent: [+ dissent_percent : dissent +] ([+ internal_dissent +]%)
 
 = Government
 
@@ -90,15 +90,15 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Internal Factions of the SPD
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +] ([+ left_strength +]%), dissent: [+ left_dissent : dissent +] ([+ left_dissent +]%)
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +] ([+ center_strength +]%), dissent: [+ center_dissent : dissent +] ([+ center_dissent +]%)
 
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +] ([+ labor_strength +]%), dissent: [+ labor_dissent : dissent +] ([+ labor_dissent +]%)
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +] ([+ reformist_strength +]%), dissent: [+ reformist_dissent : dissent +] ([+ reformist_dissent +]%)
 
-[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
+[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +] ([+ neorevisionist_strength +]%), dissent: [+ neorevisionist_dissent : dissent +] ([+ neorevisionist_dissent +]%) ?]
 
 
 @paramilitaries
@@ -121,31 +121,31 @@ if (Q.sa_strength) {
 
 {!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Reichsbanner</span>!} Strength: [+ rb_strength_2 +] thousand
 
-Reichsbanner Militarization: [+ rb_militancy : militancy +]
+Reichsbanner Militarization: [+ rb_militancy : militancy +] ([+ rb_militancy +]%)
 
 {!<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD.">RFB</span>!} Strength: [+ rfb_strength_2 +] thousand
 
-RFB Militarization: [+ rfb_militancy : militancy +]
+RFB Militarization: [+ rfb_militancy : militancy +] ([+ rfb_militancy +]%)
 
 {!<span class="tooltip-text" title="The Stahlhelm is a right-wing organization of war veterans associated with the DNVP.">Stahlhelm</span>!} Strength: [+ sh_strength_2 +] thousand
 
-Stahlhelm Militarization: [+ sh_militancy : militancy +]
+Stahlhelm Militarization: [+ sh_militancy : militancy +] ([+ sh_militancy +]%)
 
 {!<span class="tooltip-text" title="The SA (Sturmabteilung) is the Nazi paramilitary.">SA</span>!} Strength: [+ sa_strength_2 +] thousand
 
-SA Militarization: [+ sa_militancy : militancy +]
+SA Militarization: [+ sa_militancy : militancy +] ([+ sa_militancy +]%)
 
 = Official military/paramilitaries
 
 Reichswehr: [+ reichswehr_strength +] thousand troops.
 
-Reichswehr Loyalty: [+ reichswehr_loyalty : loyalty +]
+Reichswehr Loyalty: [+ reichswehr_loyalty : loyalty +] ([+ reichswehr_loyalty +]%)
 
 Prussian police: [+ prussian_police_strength +] thousand members.
 
-Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
+Prussian police loyalty: [+ prussian_police_loyalty : loyalty +] ([+ prussian_police_loyalty +]%)
 
-[? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
+[? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ([+ interior_police_loyalty +]%) ?]
 
 @polls
 on-arrival: {!
