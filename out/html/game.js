@@ -16,7 +16,7 @@
     // Add your custom code here.
   };
 
-  var TITLE = "Social Democracy: An Alternate History (Economix Mod)" + '_' + "Autumn Chen and Economix Modder";
+  var TITLE = "Social Democracy: An Alternate History (Transparency Mod)" + '_' + "Autumn Chen and Economix Modder";
 
   // the url is a link to game.json
   // test url: https://aucchen.github.io/social_democracy_mods/v0.1.json
