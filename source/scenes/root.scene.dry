@@ -159,6 +159,19 @@ Q.reichswehr_strength = 100;
 Q.reichswehr_militancy = 5;
 Q.reichswehr_loyalty = 0.2;
 
+
+// militancy percentage values
+Q.rb_militancy_percent = Q.rb_militancy*100;
+Q.rfb_militancy_percent = Q.rfb_militancy*100;
+Q.sh_militancy_percent = Q.sh_militancy*100;
+Q.sa_militancy_percent = Q.sa_militancy*100;
+
+// paramilitary loyalty percentage values
+Q.reichswehr_loyalty_percent = Q.reichswehr_loyalty*100;
+Q.prussian_police_loyalty_percent = Q.prussian_police_loyalty*100;
+Q.interior_police_loyalty_percent = Q.interior_police_loyalty*100;
+
+
 // The state of the country
 
 // popular opinion
