@@ -251,35 +251,35 @@ go-to: menu
 
 Strength: [+ rb_strength +] thousand
 
-Militarization: [+ rb_militancy : militancy +] ([+ rb_militancy +]%)
+Militarization: [+ rb_militancy : militancy +] ([+ rb_militancy_percent +]%)
 
 **Rotfrontkämpferbund (RFB)**: The "Red Front Fighter's League" is associated with the KPD.
 
 Strength: [+ rfb_strength +] thousand
 
-Militarization: [+ rfb_militancy : militancy +] ([+ rfb_militancy +]%)
+Militarization: [+ rfb_militancy : militancy +] ([+ rfb_militancy_percent +]%)
 
 **Der Stahlhelm**: A right-wing nationalist organization of primarily Great War veterans, descended from the *Freikorps* that emerged after the war. Associated with the DNVP.
 
 Strength: [+ sh_strength +] thousand
 
-Militarization: [+ sh_militancy : militancy +] ([+ sh_militancy +]%)
+Militarization: [+ sh_militancy : militancy +] ([+ sh_militancy_percent +]%)
 
 **Sturmabteilung (SA)**: This is the nazi paramilitary group.
 
 Strength: [+ sa_strength +] thousand
 
-Militarization: [+ sa_militancy : militancy +] ([+ sa_militancy +]%)
+Militarization: [+ sa_militancy : militancy +] ([+ sa_militancy_percent +]%)
 
 **Official military/paramilitary groups:**
 
 **Reichswehr**: [+ reichswehr_strength +] thousand troops. This is Germany's military.
 
-Loyalty: [+ reichswehr_loyalty : loyalty +] ([+ reichswehr_loyalty +]%)
+Loyalty: [+ reichswehr_loyalty : loyalty +] ([+ reichswehr_loyalty_percent +]%)
 
 **Prussian police**: [+ prussian_police_strength +] thousand members.
 
-Loyalty: [+ prussian_police_loyalty : loyalty +] ([+ prussian_police_loyalty +]%)
+Loyalty: [+ prussian_police_loyalty : loyalty +] ([+ prussian_police_loyalty_percent +]%)
 
 
 
